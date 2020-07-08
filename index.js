@@ -31,7 +31,7 @@ form.addEventListener("submit", (e) => {
         setTimeout(1000);
       });*/
       if (username.value == userName && password.value == userPwd) {
-        window.location.href = "/pages/dashboard-page/dashboard-page.html";
+        window.location.href = "./pages/dashboard-page/dashboard-page.html";
       }
     }
   });
