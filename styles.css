@@ -1,0 +1,44 @@
+body {
+  font-family: "Varela Round", sans-serif;
+  background-image: linear-gradient(to right, #ff9966, #ff5e62);
+}
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+.login-container {
+  top: 100px;
+  width: 400px;
+  padding: 30px;
+  border-radius: 30px;
+  box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.3);
+}
+.logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-image: url("./assets/logo.png");
+  background-position: center;
+  background-size: cover;
+  align-self: center;
+}
+
+.form-group {
+  padding-top: 10px;
+}
+.form-group > h3 {
+  text-align: center;
+  font-weight: 700;
+}
+
+.submitBtn {
+  background-image: linear-gradient(to right, #ff9966, #ff5e62);
+  border: none;
+}
+.submitBtn:hover {
+  transition: all ease-in-out 0.1s;
+  background-image: linear-gradient(to right, #b36a46, #ad484a);
+  border: none;
+  outline: none;
+}

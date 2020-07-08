@@ -1,0 +1,108 @@
+body {
+  font-family: "Varela Round", sans-serif;
+}
+.navbar {
+  background-image: linear-gradient(to right, #ff9966, #ff5e62);
+}
+
+.btn {
+  background-image: linear-gradient(to right, #ff9966, #ff5e62);
+  border: none;
+}
+.btn:hover {
+  background: none;
+  background-image: linear-gradient(to right, #b36a46, #ad484a);
+  transition: all ease-in-out 0.1s;
+  border: none;
+  outline: none;
+}
+.btn:focus {
+  outline: none;
+}
+.sidebar {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+  padding: 70px 0 0 0;
+  border-right: 1px solid #d3d3d3;
+}
+
+.sidebar-left {
+  position: sticky;
+  top: 0;
+  height: calc(100vh - 70px);
+}
+
+.nav-item-container {
+  width: 100%;
+  height: 80px;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.nav-link,
+.nav-link:hover {
+  color: #ff9966;
+}
+.nav-link:focus {
+  color: #ad484a;
+}
+.nav-item-container:hover {
+  background-color: #d4d4d4;
+  transition: all ease-in-out 0.5s;
+}
+
+/* Dashboard Container*/
+
+.dashboard-container {
+  top: 0;
+  padding-top: 70px;
+  height: calc(100vh - 70px);
+}
+.statistic-container {
+  padding-bottom: 40px;
+}
+
+.trending-orders-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.order-card-slider {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+.order-card-slider::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.order-card-slider::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+.order-card-slider::-webkit-scrollbar-track {
+  background: transparent;
+}
+.order-card {
+  min-width: 200px;
+  min-height: 200px;
+  margin: 20px;
+  padding: 8px;
+  border-radius: 20px;
+}
+
+/* charts */
+#revenue-chart {
+  margin-top: 60px;
+  scale: 1.5;
+}
